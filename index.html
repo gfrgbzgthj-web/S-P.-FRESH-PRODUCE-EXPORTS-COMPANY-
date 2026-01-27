@@ -1,141 +1,134 @@
-You are a professional senior website developer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S P Fresh Produce Exports Company</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Create a COMPLETE, PROFESSIONAL, EXPORT-BUSINESS WEBSITE that is 100% READY TO USE.
-All features must be included in ONE FINAL VERSION.
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f4}
+header{background:#2e7d32;color:#fff;position:sticky;top:0;z-index:1000}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;flex-wrap:wrap}
+nav .logo{font-size:18px;font-weight:bold}
+nav a{color:#fff;text-decoration:none;margin:6px 10px;font-size:14px}
+nav a:hover{text-decoration:underline}
 
-========================
-BUSINESS DETAILS
-========================
-Company Name:
-S P Fresh Produce Exports Company
+section{background:#fff;margin:15px;padding:22px;border-radius:12px}
+h2{color:#2e7d32;margin-top:0}
 
-Business Type:
-Fresh Produce Exporter
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{border:1px solid #ddd;border-radius:10px;padding:15px}
+.card h3{margin-top:0}
 
-Products:
-- Onion
-- Potato
-- Garlic
-- Ginger
+.btn{display:inline-block;background:#25D366;color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none;font-weight:bold}
 
-Location:
-Aurangabad, Maharashtra, India
+footer{background:#333;color:#fff;text-align:center;padding:12px;font-size:14px}
 
-Export Markets:
-UAE / Dubai
-Middle East
-Global
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+</style>
+</head>
 
-Contact Details:
-WhatsApp: +91 99752 70780
-Email: parvejshaikh8010@gmail.com
+<body>
 
-========================
-WEBSITE LOOK & FEEL
-========================
-- International-level professional design
-- Clean, modern, export-buyer-ready
-- Mobile + desktop responsive
-- Fast loading
-- Green/white professional color theme
+<!-- HEADER / MENU -->
+<header>
+<nav>
+<div class="logo">S P Fresh Produce Exports</div>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#payment">Payment</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
 
-========================
-MENU / HEADER (TOP NAVIGATION)
-========================
-Home
-About Us
-Products
-Gallery
-Payment Terms
-Contact
-WhatsApp Chat
+<!-- HOME -->
+<section id="home">
+<h2>Trusted Exporter from India</h2>
+<p>Exporter of Onion • Potato • Garlic • Ginger</p>
+<a class="btn" href="https://wa.me/919975270780" target="_blank">Chat on WhatsApp</a>
+</section>
 
-========================
-PRODUCT SECTION
-========================
-For each product:
-- High-quality product photo
-- Export-grade description
-- Packing details
-- Clear text: “Price on Request”
-- WhatsApp Inquiry button
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+<p>
+We are a reliable Indian exporter supplying export-quality fresh produce
+with hygienic packing and timely global delivery.
+</p>
+<p>
+<strong>हिंदी:</strong>
+हम भारत से उच्च गुणवत्ता वाले प्याज, आलू, लहसुन और अदरक का निर्यात करते हैं।
+</p>
+</section>
 
-========================
-PHOTO SYSTEM
-========================
-- Temporary professional photos allowed
-- Owner can replace photos anytime
-- Photo upload & replace possible from mobile
-- No permission required from anyone
+<!-- PRODUCTS -->
+<section id="products">
+<h2>Our Products</h2>
 
-========================
-PAYMENT TERMS & CONDITIONS
-========================
-- Advance Payment: 30%
-- Balance: Before Shipment / Against BL
-- Payment Mode: T/T, LC (on request)
-- Currency: USD / AED / INR
-- Incoterms: FOB / CIF / CNF
-- Delivery Time: 7–15 days
-- Final price depends on quantity, grade, packing & destination
+<div class="products">
+<div class="card">
+<h3>🧅 Onion</h3>
+<p>Packing: 25kg Mesh Bag</p>
+<p><strong>Price:</strong> On Request</p>
+</div>
 
-========================
-LANGUAGE & COMMUNICATION SYSTEM
-========================
-- Customer can message in ANY language
-- Owner understands messages in HINDI
-- Owner replies in HINDI
-- Customer receives reply in THEIR OWN LANGUAGE
-- Use WhatsApp-based real-world translation workflow
-- Instant WhatsApp notification on inquiry
+<div class="card">
+<h3>🥔 Potato</h3>
+<p>Packing: 50kg Bag</p>
+<p><strong>Price:</strong> On Request</p>
+</div>
 
-========================
-LOCATION & TRUST
-========================
-- Show full location:
-  Aurangabad, Maharashtra, India
-- Embed Google Map
-- Mention “Exported from India”
+<div class="card">
+<h3>🧄 Garlic</h3>
+<p>Packing: 10kg / 20kg</p>
+<p><strong>Price:</strong> On Request</p>
+</div>
 
-========================
-SECURITY & FULL CONTROL
-========================
-- Website editable ONLY by the owner
-- No other person can change:
-  - Settings
-  - Content
-  - Prices
-  - Photos
-- Public users can only VIEW the website
-- Owner has full control at all times
+<div class="card">
+<h3>🫚 Ginger</h3>
+<p>Packing: 5kg / 10kg</p>
+<p><strong>Price:</strong> On Request</p>
+</div>
+</div>
+</section>
 
-========================
-ADMIN CONTROL (FRONTEND LEVEL)
-========================
-- Hidden owner-only admin control logic
-- Not visible to normal visitors
-- Owner can:
-  - Edit text content
-  - Update contact details
-  - Show/hide sections
-  - Control price display
+<!-- PAYMENT -->
+<section id="payment">
+<h2>Payment Terms</h2>
+<ul>
+<li>Advance Payment: <strong>30%</strong></li>
+<li>Balance: Before Shipment / Against BL</li>
+<li>Payment Mode: T/T, LC (on request)</li>
+<li>Delivery Time: 7–15 Days</li>
+</ul>
+</section>
 
-========================
-TECHNICAL RULES
-========================
-- Deliver ONE complete `index.html` file
-- No partial updates
-- Do not break existing features
-- All features merged together
-- Ready to use: copy → paste → commit
-- Clean HTML / CSS / JS
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>WhatsApp:</strong> +91 99752 70780</p>
+<p><strong>Email:</strong> parvejshaikh8010@gmail.com</p>
+<p><strong>Location:</strong> Aurangabad, Maharashtra, India</p>
+</section>
 
-========================
-FINAL OBJECTIVE
-========================
-Create a fully professional, secure, export-business-ready website where:
-- Buyers trust the company
-- Communication works in any language
-- Payment terms are clear
-- Owner has 100% control
-- Website looks built by a top-level professional developer
+<footer>
+© 2026 S P Fresh Produce Exports Company
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919975270780" target="_blank">💬</a>
+
+</body>
+</html>
