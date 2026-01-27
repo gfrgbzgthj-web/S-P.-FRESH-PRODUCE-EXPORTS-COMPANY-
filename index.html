@@ -2,302 +2,172 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>S P Fresh Produce Exports</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SP Fresh Produce Exports Company</title>
-
-<meta name="description" content="SP Fresh Produce Exports Company – Exporter of Onion, Ginger, Potato & Garlic from India with complete product enquiry, packaging, pricing and advance payment system.">
-<meta name="keywords" content="SP Export, Onion Export India, Ginger Export, Potato Export, Garlic Export">
-<meta name="robots" content="index, follow">
+<meta name="description" content="SP Fresh Produce Exports | Onion Potato Garlic Exporter from India">
+<meta name="keywords" content="SP, SP Exports, Fresh Produce Exporter, Onion Export, Garlic Export, Potato Export">
 
 <style>
-:root{--green:#1f7a3d;--dark:#0f3d2e;--light:#f7faf8}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:#222;line-height:1.6}
-header{background:linear-gradient(120deg,var(--dark),var(--green));color:#fff;padding:70px 20px;text-align:center}
-header h1{margin:0;font-size:38px}
-header p{max-width:900px;margin:15px auto;font-size:18px}
-
-nav{background:#fff;position:sticky;top:0;z-index:1000;
-text-align:center;padding:12px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
-nav a{margin:0 14px;cursor:pointer;font-weight:bold;color:var(--green);text-decoration:none}
-
-section{max-width:1250px;margin:auto;padding:70px 20px}
-h2{color:var(--dark);font-size:32px}
-.subtitle{color:#555;max-width:850px}
-
-.card{background:#fff;border-radius:14px;padding:22px;margin:22px 0;
-box-shadow:0 6px 20px rgba(0,0,0,.08)}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-img{width:100%;height:200px;object-fit:cover;border-radius:12px}
-
-select,input{padding:10px;width:100%;margin:8px 0}
-.btn{background:#25D366;color:#fff;padding:12px 22px;border:none;border-radius:25px;font-weight:bold;cursor:pointer}
-.result{background:#eef7f2;padding:16px;border-radius:12px;margin-top:15px}
-
-footer{background:#0b2e22;color:#fff;text-align:center;padding:26px}
-
-/* CHAT */
-.chat-btn{
-position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;
-width:60px;height:60px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;
-font-size:28px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.3)
-}
-.chat-box{
-display:none;position:fixed;bottom:90px;right:20px;width:300px;
-background:#fff;border-radius:14px;
-box-shadow:0 10px 30px rgba(0,0,0,.3);overflow:hidden
-}
-.chat-header{background:#25D366;color:#fff;padding:15px;font-weight:bold}
-.chat-body{padding:15px;font-size:14px}
-.chat-body a{display:block;margin-top:10px;
-background:#25D366;color:#fff;text-align:center;
-padding:10px;border-radius:20px;text-decoration:none}
+body{font-family:Arial;margin:0;background:#f4f6f4}
+header{background:#2e7d32;color:#fff;padding:20px;text-align:center}
+nav{background:#e8f5e9;padding:10px;text-align:center}
+nav a{margin:8px;color:#2e7d32;font-weight:bold;text-decoration:none}
+section{padding:20px}
+.card{background:#fff;padding:20px;border-radius:8px;max-width:550px;margin:auto}
+input,select,button{width:100%;padding:10px;margin:8px 0}
+button{background:#25D366;color:#fff;border:none;font-size:16px;border-radius:6px}
+.admin{background:#fff3cd}
+.lang button{width:auto;padding:5px 10px;margin:2px}
+footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:30px}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>SP Fresh Produce Exports Company</h1>
-<p>Premium Indian exporter of Onion, Ginger, Potato & Garlic from Aurangabad (India) to global markets</p>
+<div class="lang">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('hi')">हिं</button>
+</div>
+<h1 id="title">S P Fresh Produce Exports</h1>
+<p id="subtitle">Exporter of Onion, Potato & Garlic from India</p>
 </header>
 
 <nav>
 <a href="#home">Home</a>
 <a href="#products">Products</a>
-<a href="#packaging">Packaging</a>
-<a href="#journey">Journey</a>
-<a href="#buyers">Buyers</a>
 <a href="#enquiry">Enquiry</a>
 <a href="#payment">Payment</a>
+<a href="#admin">Admin</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
 <section id="home">
-<h2>Welcome to SP Fresh Produce Exports</h2>
 <div class="card">
-We are a professional Indian export company supplying export-quality vegetables
-directly from farms to domestic and international buyers with trust, quality and transparency.
+<p id="about">
+We are Indian exporters supplying premium quality fresh vegetables worldwide.
+</p>
 </div>
 </section>
 
-<!-- PRODUCTS -->
 <section id="products">
-<h2>Our Products – Full Details</h2>
-
 <div class="card">
-<h3>🧅 Onion – Maharashtra (Nashik)</h3>
-Varieties: Red Onion, Pink Onion<br>
-Size Grades: 45–55 mm | 55–65 mm | 65–75 mm<br>
-Packaging: 10kg | 20kg | 25kg | 50kg
-</div>
-
-<div class="card">
-<h3>🌱 Ginger – Gujarat</h3>
-Varieties: Fresh Green Ginger, Dry Ginger (Sonth)<br>
-Packaging: 5kg | 10kg | 20kg
-</div>
-
-<div class="card">
-<h3>🥔 Potato – India</h3>
-Varieties: Table Potato, Processing Potato<br>
-Packaging: 10kg | 20kg | 25kg | 50kg
-</div>
-
-<div class="card">
-<h3>🧄 Garlic – India</h3>
-Varieties: Big Size Garlic, Normal Garlic<br>
-Packaging: 5kg | 10kg | 20kg
+<h3>Our Products</h3>
+<ul>
+<li>Onion</li>
+<li>Potato</li>
+<li>Garlic</li>
+</ul>
 </div>
 </section>
 
-<!-- PACKAGING -->
-<section id="packaging">
-<h2>Export Packaging</h2>
-<div class="card">
-✔ Sorting & grading by size<br>
-✔ Dry cleaning & moisture control<br>
-✔ Mesh bags / PP bags / cartons<br>
-✔ Buyer branding & labeling available
-</div>
-</section>
-
-<!-- JOURNEY -->
-<section id="journey">
-<h2>Export Journey (Aurangabad → Dubai)</h2>
-<div class="card">
-Farm Sourcing → Sorting → Packing → Transport to Mumbai Port → Container Loading →
-Customs Clearance → Sea Shipment → Jebel Ali Port (Dubai) → Buyer Warehouse
-</div>
-</section>
-
-<!-- BUYERS -->
-<section id="buyers">
-<h2>Our Buyers</h2>
-<div class="card">
-<b>India:</b> Maharashtra, Gujarat, Madhya Pradesh, Uttar Pradesh, West Bengal
-</div>
-<div class="card">
-<b>International:</b> UAE (Dubai), Saudi Arabia, Bangladesh, Sri Lanka
-</div>
-</section>
-
-<!-- ENQUIRY -->
 <section id="enquiry">
-<h2>Product Enquiry & Price Calculator</h2>
-
 <div class="card">
+<h3>Product Enquiry & Price Calculator</h3>
 
-<label><b>Select Product</b></label>
-<select id="product" onchange="loadPackaging()">
-<option value="">-- Select Product --</option>
+<select id="product">
+<option value="">Select Product</option>
+<option value="Garlic">Garlic</option>
 <option value="Onion">Onion</option>
 <option value="Potato">Potato</option>
-<option value="Ginger">Ginger</option>
-<option value="Garlic">Garlic</option>
 </select>
 
-<label><b>Select Packaging (KG per Bag)</b></label>
-<select id="packaging" onchange="resetCalc()">
-<option value="">-- Select Packaging --</option>
+<select id="packaging">
+<option value="">Select Packaging (KG per Bag)</option>
 </select>
 
-<label><b>Number of Bags</b></label>
-<input type="number" id="bags" min="1" placeholder="Enter number of bags" oninput="calculatePrice()">
+<input type="number" id="bags" placeholder="Number of Bags">
+<input type="number" id="rate" placeholder="Rate per KG (₹)">
 
-<label><b>Rate per KG (₹)</b></label>
-<input type="number" id="rate" min="1" placeholder="Enter rate per KG" oninput="calculatePrice()">
-
-<div id="summary" class="result" style="display:none"></div>
-
-<button class="btn" onclick="sendEnquiry()">📲 Send Enquiry on WhatsApp</button>
-
+<button onclick="sendWhatsApp()">Send Enquiry on WhatsApp</button>
 </div>
 </section>
 
-<!-- PAYMENT -->
 <section id="payment">
-<h2>Payment Terms</h2>
 <div class="card">
-Advance Payment: <b>40%</b> at order confirmation<br>
-Balance Payment: Before shipment / Against Bill of Lading<br>
-Payment Mode: T/T (Bank Transfer), LC (on request)<br>
-Currency: INR / USD / AED
+<h3>Payment Options</h3>
+<p><strong>UPI:</strong> spfresh@upi</p>
+<p><strong>Bank Transfer:</strong> Available</p>
+<p>Advance / Sample Payment Accepted</p>
 </div>
 </section>
 
-<!-- CONTACT -->
+<section id="admin">
+<div class="card admin">
+<h3>Admin Rate Control Panel</h3>
+
+<select id="adminProduct">
+<option value="Garlic">Garlic</option>
+<option value="Onion">Onion</option>
+<option value="Potato">Potato</option>
+</select>
+
+<input type="number" id="adminRate" placeholder="Set Rate per KG">
+
+<button onclick="saveRate()">Save Rate</button>
+<p id="saved"></p>
+</div>
+</section>
+
 <section id="contact">
-<h2>Contact Us</h2>
 <div class="card">
-<b>Company:</b> SP Fresh Produce Exports Company<br>
-<b>Location:</b> Aurangabad, Maharashtra, India<br>
-<b>Email:</b> parvejshaikh8010@gmail.com<br>
-<b>WhatsApp:</b> +91 99752 70780
+<h3>Contact Details</h3>
+<p><strong>Owner:</strong> Parvej Shaikh</p>
+<p><strong>Phone:</strong> +91 8010910780</p>
+<p><strong>Email:</strong> parvejshaikh8010@gmail.com</p>
+
+<label>Owner Photo</label>
+<input type="file">
 </div>
 </section>
 
 <footer>
-© 2026 SP Fresh Produce Exports Company • India
+© 2026 S P Fresh Produce Exports | India
 </footer>
 
-<!-- CHAT -->
-<div class="chat-btn" onclick="toggleChat()">💬</div>
-<div class="chat-box" id="chatBox">
-<div class="chat-header">SP Export Chat</div>
-<div class="chat-body">
-<p>Hello 👋</p>
-<p>For product details, price & export enquiry:</p>
-<a href="https://wa.me/919975270780">Chat on WhatsApp</a>
-</div>
-</div>
-
 <script>
-/* PRODUCT-WISE PACKAGING */
-const packagingList = {
-  Onion:[10,20,25,50],
-  Potato:[10,20,25,50],
-  Ginger:[5,10,20],
-  Garlic:[5,10,20]
+const packagingData={
+Garlic:[5,10,20,25],
+Onion:[10,20,25,50],
+Potato:[25,50]
 };
 
-function loadPackaging(){
-  const product=document.getElementById("product").value;
-  const pack=document.getElementById("packaging");
-  pack.innerHTML='<option value="">-- Select Packaging --</option>';
-  if(product){
-    packagingList[product].forEach(p=>{
-      pack.innerHTML+=`<option value="${p}">${p} KG Bag</option>`;
-    });
-  }
-  resetCalc();
+document.getElementById("product").addEventListener("change",function(){
+const p=this.value;
+const pack=document.getElementById("packaging");
+pack.innerHTML='<option value="">Select Packaging (KG per Bag)</option>';
+(packagingData[p]||[]).forEach(k=>{
+pack.innerHTML+=`<option value="${k}">${k} KG Bag</option>`;
+});
+document.getElementById("rate").value=localStorage.getItem(p)||"";
+});
+
+function saveRate(){
+const p=document.getElementById("adminProduct").value;
+const r=document.getElementById("adminRate").value;
+localStorage.setItem(p,r);
+document.getElementById("saved").innerText="Rate saved for "+p;
 }
 
-function resetCalc(){
-  document.getElementById("bags").value="";
-  document.getElementById("rate").value="";
-  document.getElementById("summary").style.display="none";
+function sendWhatsApp(){
+const p=product.value,pk=packaging.value,b=bags.value,r=rate.value;
+if(!p||!pk||!b||!r){alert("Please fill all fields");return;}
+const totalKg=pk*b;
+const total=totalKg*r;
+const msg=`Product Enquiry%0AProduct: ${p}%0APackaging: ${pk} KG Bag%0ABags: ${b}%0ATotal KG: ${totalKg}%0ARate: ₹${r}/KG%0ATotal Amount: ₹${total}`;
+window.open("https://wa.me/918010910780?text="+msg);
 }
 
-function calculatePrice(){
-  const product=document.getElementById("product").value;
-  const pack=Number(document.getElementById("packaging").value);
-  const bags=Number(document.getElementById("bags").value);
-  const rate=Number(document.getElementById("rate").value);
-
-  if(product && pack && bags && rate){
-    const totalKg=pack*bags;
-    const total=totalKg*rate;
-    const advance=total*0.40;
-    const balance=total*0.60;
-
-    const box=document.getElementById("summary");
-    box.style.display="block";
-    box.innerHTML=
-    `<b>Product:</b> ${product}<br>
-     <b>Packaging:</b> ${pack} KG<br>
-     <b>Total Bags:</b> ${bags}<br>
-     <b>Total Quantity:</b> ${totalKg} KG<br><br>
-     <b>Rate:</b> ₹${rate}/KG<br>
-     <b>Total Amount:</b> ₹${total}<br>
-     <b>Advance (40%):</b> ₹${advance}<br>
-     <b>Balance (60%):</b> ₹${balance}`;
-  }
+function setLang(l){
+if(l==="hi"){
+title.innerText="एस पी फ्रेश प्रोड्यूस एक्सपोर्ट्स";
+subtitle.innerText="भारत से प्याज, आलू और लहसुन निर्यातक";
+about.innerText="हम भारत से उच्च गुणवत्ता वाली ताज़ी सब्ज़ियों का निर्यात करते हैं।";
+}else{
+title.innerText="S P Fresh Produce Exports";
+subtitle.innerText="Exporter of Onion, Potato & Garlic from India";
+about.innerText="We are Indian exporters supplying premium quality fresh vegetables worldwide.";
 }
-
-function sendEnquiry(){
-  const product=document.getElementById("product").value;
-  const pack=document.getElementById("packaging").value;
-  const bags=document.getElementById("bags").value;
-  const rate=document.getElementById("rate").value;
-
-  if(!product||!pack||!bags||!rate){
-    alert("Please fill all details");
-    return;
-  }
-
-  const totalKg=pack*bags;
-  const total=totalKg*rate;
-  const advance=total*0.40;
-
-  const msg=
-`Export Enquiry – SP Fresh Produce
-Product: ${product}
-Packaging: ${pack} KG
-Bags: ${bags}
-Total Quantity: ${totalKg} KG
-Rate: ₹${rate}/KG
-Total Amount: ₹${total}
-Advance (40%): ₹${advance}`;
-
-  window.open("https://wa.me/919975270780?text="+encodeURIComponent(msg),"_blank");
-}
-
-function toggleChat(){
-const box=document.getElementById("chatBox");
-box.style.display=box.style.display==="block"?"none":"block";
 }
 </script>
 
