@@ -38,16 +38,20 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 <a href="#products">Products</a>
 <a href="#enquiry">Enquiry</a>
 <a href="#payment">Payment</a>
-<a href="#admin">Admin</a>
+<a href="#adminLock">Admin</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<!-- HOME -->
 <section id="home">
 <div class="card">
-<p id="about">We are Indian exporters supplying premium quality fresh vegetables worldwide.</p>
+<p id="about">
+We are Indian exporters supplying premium quality fresh vegetables worldwide.
+</p>
 </div>
 </section>
 
+<!-- PRODUCTS -->
 <section id="products">
 <div class="card">
 <h3>Our Products</h3>
@@ -59,6 +63,7 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 </div>
 </section>
 
+<!-- ENQUIRY -->
 <section id="enquiry">
 <div class="card">
 <h3>Product Enquiry & Price Calculator</h3>
@@ -81,6 +86,7 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 </div>
 </section>
 
+<!-- PAYMENT -->
 <section id="payment">
 <div class="card">
 <h3>Payment Options</h3>
@@ -90,7 +96,18 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 </div>
 </section>
 
-<section id="admin">
+<!-- ADMIN LOGIN LOCK -->
+<section id="adminLock">
+<div class="card admin">
+<h3>Admin Login</h3>
+<input type="password" id="adminPass" placeholder="Enter Admin Password">
+<button onclick="checkAdmin()">Login</button>
+<p id="adminMsg" style="color:red;"></p>
+</div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin" style="display:none;">
 <div class="card admin">
 <h3>Admin Rate Control Panel</h3>
 
@@ -107,6 +124,7 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <div class="card">
 <h3>Contact Details</h3>
@@ -123,12 +141,16 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 </footer>
 
 <script>
+/* ---------- DATA ---------- */
 const packagingData={
 Garlic:[5,10,20,25],
 Onion:[10,20,25,50],
 Potato:[25,50]
 };
 
+const ADMIN_PASSWORD = "12345"; // 🔐 CHANGE PASSWORD HERE
+
+/* ---------- PRODUCT → PACKAGING ---------- */
 document.getElementById("product").addEventListener("change",function(){
 const p=this.value;
 const pack=document.getElementById("packaging");
@@ -139,6 +161,18 @@ pack.innerHTML+=`<option value="${k}">${k} KG Bag</option>`;
 document.getElementById("rate").value=localStorage.getItem(p)||"";
 });
 
+/* ---------- ADMIN LOGIN ---------- */
+function checkAdmin(){
+const pass=document.getElementById("adminPass").value;
+if(pass===ADMIN_PASSWORD){
+document.getElementById("admin").style.display="block";
+document.getElementById("adminLock").style.display="none";
+}else{
+document.getElementById("adminMsg").innerText="Wrong Password!";
+}
+}
+
+/* ---------- SAVE RATE ---------- */
 function saveRate(){
 const p=document.getElementById("adminProduct").value;
 const r=document.getElementById("adminRate").value;
@@ -146,6 +180,7 @@ localStorage.setItem(p,r);
 document.getElementById("saved").innerText="Rate saved for "+p;
 }
 
+/* ---------- WHATSAPP ---------- */
 function sendWhatsApp(){
 const p=product.value,pk=packaging.value,b=bags.value,r=rate.value;
 if(!p||!pk||!b||!r){alert("Please fill all fields");return;}
@@ -155,6 +190,7 @@ const msg=`Product Enquiry%0AProduct: ${p}%0APackaging: ${pk} KG Bag%0ABags: ${b
 window.open("https://wa.me/918010910780?text="+msg);
 }
 
+/* ---------- LANGUAGE ---------- */
 function setLang(l){
 if(l==="hi"){
 title.innerText="एस पी फ्रेश प्रोड्यूस एक्सपोर्ट्स";
