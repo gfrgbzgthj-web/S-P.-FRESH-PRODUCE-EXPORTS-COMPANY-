@@ -4,20 +4,34 @@
 <meta charset="UTF-8">
 <title>S P Fresh Produce Exports</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SP Fresh Produce Exports | Onion Potato Garlic Exporter from India">
-<meta name="keywords" content="SP, SP Exports, Onion Exporter, Garlic Exporter, Potato Exporter">
+
+<!-- SEO -->
+<meta name="description" content="SP Fresh Produce Exports | Exporter of Onion, Potato, Garlic & Fresh Vegetables from India">
+<meta name="keywords" content="SP Exports, Onion Exporter, Potato Exporter, Garlic Exporter, Fresh Vegetables India">
+
+<!-- AUTO REDIRECT (IMPORTANT) -->
+<script>
+const OFFICIAL_URL = "https://gfrgbzgthi-web.github.io/S-P-FRESH-PRODUCE-EXPORTS-COMPANY-/";
+if (
+  location.hostname.includes("github.io") &&
+  !location.href.startsWith(OFFICIAL_URL)
+) {
+  location.replace(OFFICIAL_URL);
+}
+</script>
 
 <style>
 body{font-family:Arial;margin:0;background:#f4f6f4}
-header{background:#2e7d32;color:#fff;padding:20px;text-align:center}
-nav{background:#e8f5e9;padding:10px;text-align:center}
+header{background:#2e7d32;color:#fff;padding:25px;text-align:center}
+nav{background:#e8f5e9;padding:12px;text-align:center}
 nav a{margin:8px;color:#2e7d32;font-weight:bold;text-decoration:none}
 section{padding:20px}
-.card{background:#fff;padding:20px;border-radius:8px;max-width:550px;margin:auto}
+.card{background:#fff;padding:20px;border-radius:10px;max-width:650px;margin:15px auto}
 input,select,button{width:100%;padding:10px;margin:8px 0}
 button{background:#25D366;color:#fff;border:none;font-size:16px;border-radius:6px}
 .admin{background:#fff3cd}
-.lang button{width:auto;padding:5px 10px;margin:2px}
+.lang button{width:auto;padding:6px 12px;margin:2px}
+.share-btn{background:#0d6efd}
 footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:30px}
 </style>
 </head>
@@ -30,7 +44,10 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 <button onclick="setLang('hi')">हिं</button>
 </div>
 <h1 id="title">S P Fresh Produce Exports</h1>
-<p id="subtitle">Exporter of Onion, Potato & Garlic from India</p>
+<p id="subtitle">Exporter of Fresh Vegetables from India</p>
+
+<!-- SHARE / COPY LINK -->
+<button class="share-btn" onclick="copyLink()">Copy Website Link</button>
 </header>
 
 <nav>
@@ -42,7 +59,6 @@ footer{text-align:center;background:#2e7d32;color:#fff;padding:15px;margin-top:3
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
 <section id="home">
 <div class="card">
 <p id="about">
@@ -51,28 +67,34 @@ We are Indian exporters supplying premium quality fresh vegetables worldwide.
 </div>
 </section>
 
-<!-- PRODUCTS -->
 <section id="products">
 <div class="card">
 <h3>Our Products</h3>
 <ul>
-<li>Onion</li>
+<li>Onion (Red / White)</li>
 <li>Potato</li>
 <li>Garlic</li>
+<li>Ginger</li>
+<li>Green Chilli</li>
+<li>Drumstick</li>
+<li>Mixed Fresh Vegetables</li>
 </ul>
 </div>
 </section>
 
-<!-- ENQUIRY -->
 <section id="enquiry">
 <div class="card">
 <h3>Product Enquiry & Price Calculator</h3>
 
 <select id="product">
 <option value="">Select Product</option>
-<option value="Garlic">Garlic</option>
 <option value="Onion">Onion</option>
 <option value="Potato">Potato</option>
+<option value="Garlic">Garlic</option>
+<option value="Ginger">Ginger</option>
+<option value="Green Chilli">Green Chilli</option>
+<option value="Drumstick">Drumstick</option>
+<option value="Mixed Vegetables">Mixed Vegetables</option>
 </select>
 
 <select id="packaging">
@@ -86,17 +108,14 @@ We are Indian exporters supplying premium quality fresh vegetables worldwide.
 </div>
 </section>
 
-<!-- PAYMENT -->
 <section id="payment">
 <div class="card">
 <h3>Payment Options</h3>
 <p><strong>UPI:</strong> spfresh@upi</p>
 <p><strong>Bank Transfer:</strong> Available</p>
-<p>Advance / Sample Payment Accepted</p>
 </div>
 </section>
 
-<!-- ADMIN LOGIN LOCK -->
 <section id="adminLock">
 <div class="card admin">
 <h3>Admin Login</h3>
@@ -106,33 +125,30 @@ We are Indian exporters supplying premium quality fresh vegetables worldwide.
 </div>
 </section>
 
-<!-- ADMIN PANEL -->
 <section id="admin" style="display:none;">
 <div class="card admin">
-<h3>Admin Rate Control Panel</h3>
-
+<h3>Admin Rate Control</h3>
 <select id="adminProduct">
-<option value="Garlic">Garlic</option>
 <option value="Onion">Onion</option>
 <option value="Potato">Potato</option>
+<option value="Garlic">Garlic</option>
+<option value="Ginger">Ginger</option>
+<option value="Green Chilli">Green Chilli</option>
+<option value="Drumstick">Drumstick</option>
+<option value="Mixed Vegetables">Mixed Vegetables</option>
 </select>
-
 <input type="number" id="adminRate" placeholder="Set Rate per KG">
-
 <button onclick="saveRate()">Save Rate</button>
 <p id="saved"></p>
 </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
 <div class="card">
-<h3>Contact Details</h3>
+<h3>Contact</h3>
 <p><strong>Owner:</strong> Parvej Shaikh</p>
 <p><strong>Phone:</strong> +91 8010910780</p>
 <p><strong>Email:</strong> parvejshaikh8010@gmail.com</p>
-<label>Owner Photo</label>
-<input type="file">
 </div>
 </section>
 
@@ -141,64 +157,61 @@ We are Indian exporters supplying premium quality fresh vegetables worldwide.
 </footer>
 
 <script>
-/* ---------- DATA ---------- */
 const packagingData={
-Garlic:[5,10,20,25],
 Onion:[10,20,25,50],
-Potato:[25,50]
+Potato:[25,50],
+Garlic:[5,10,20,25],
+Ginger:[5,10,20],
+"Green Chilli":[5,10,20],
+Drumstick:[10,20],
+"Mixed Vegetables":[10,20,25]
 };
+const ADMIN_PASSWORD="12345";
 
-const ADMIN_PASSWORD = "12345"; // 🔐 CHANGE PASSWORD HERE
-
-/* ---------- PRODUCT → PACKAGING ---------- */
 document.getElementById("product").addEventListener("change",function(){
 const p=this.value;
 const pack=document.getElementById("packaging");
-pack.innerHTML='<option value="">Select Packaging (KG per Bag)</option>';
+pack.innerHTML='<option value="">Select Packaging</option>';
 (packagingData[p]||[]).forEach(k=>{
 pack.innerHTML+=`<option value="${k}">${k} KG Bag</option>`;
 });
 document.getElementById("rate").value=localStorage.getItem(p)||"";
 });
 
-/* ---------- ADMIN LOGIN ---------- */
 function checkAdmin(){
-const pass=document.getElementById("adminPass").value;
-if(pass===ADMIN_PASSWORD){
-document.getElementById("admin").style.display="block";
-document.getElementById("adminLock").style.display="none";
-}else{
-document.getElementById("adminMsg").innerText="Wrong Password!";
-}
+if(adminPass.value===ADMIN_PASSWORD){
+admin.style.display="block";
+adminLock.style.display="none";
+}else adminMsg.innerText="Wrong Password!";
 }
 
-/* ---------- SAVE RATE ---------- */
 function saveRate(){
-const p=document.getElementById("adminProduct").value;
-const r=document.getElementById("adminRate").value;
-localStorage.setItem(p,r);
-document.getElementById("saved").innerText="Rate saved for "+p;
+localStorage.setItem(adminProduct.value,adminRate.value);
+saved.innerText="Rate saved";
 }
 
-/* ---------- WHATSAPP ---------- */
 function sendWhatsApp(){
-const p=product.value,pk=packaging.value,b=bags.value,r=rate.value;
-if(!p||!pk||!b||!r){alert("Please fill all fields");return;}
-const totalKg=pk*b;
-const total=totalKg*r;
-const msg=`Product Enquiry%0AProduct: ${p}%0APackaging: ${pk} KG Bag%0ABags: ${b}%0ATotal KG: ${totalKg}%0ARate: ₹${r}/KG%0ATotal Amount: ₹${total}`;
+if(!product.value||!packaging.value||!bags.value||!rate.value){
+alert("Fill all fields");return;
+}
+const totalKg=packaging.value*bags.value;
+const msg=`Product Enquiry%0AProduct: ${product.value}%0APackaging: ${packaging.value} KG%0ABags: ${bags.value}%0ATotal KG: ${totalKg}%0ARate: ₹${rate.value}`;
 window.open("https://wa.me/918010910780?text="+msg);
 }
 
-/* ---------- LANGUAGE ---------- */
+function copyLink(){
+navigator.clipboard.writeText(OFFICIAL_URL);
+alert("Website link copied! Share with buyers.");
+}
+
 function setLang(l){
 if(l==="hi"){
 title.innerText="एस पी फ्रेश प्रोड्यूस एक्सपोर्ट्स";
-subtitle.innerText="भारत से प्याज, आलू और लहसुन निर्यातक";
+subtitle.innerText="भारत से ताज़ी सब्ज़ियों के निर्यातक";
 about.innerText="हम भारत से उच्च गुणवत्ता वाली ताज़ी सब्ज़ियों का निर्यात करते हैं।";
 }else{
 title.innerText="S P Fresh Produce Exports";
-subtitle.innerText="Exporter of Onion, Potato & Garlic from India";
+subtitle.innerText="Exporter of Fresh Vegetables from India";
 about.innerText="We are Indian exporters supplying premium quality fresh vegetables worldwide.";
 }
 }
